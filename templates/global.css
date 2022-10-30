@@ -1,0 +1,117 @@
+/*Import SpaceGrotesk*/
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url(fonts/SpaceGrotesk-Regular.woff2);
+}
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url(fonts/SpaceGrotesk-Bold.woff2);
+    font-weight: bold;
+}
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url(fonts/SpaceGrotesk-Light.woff2);
+    font-weight: light;
+}
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url(fonts/SpaceGrotesk-Medium.woff2);
+    font-weight: medium;
+}
+
+
+body{
+    background-color: rgb(30,30,30);
+    color:white;
+    font-family: SpaceGrotesk;
+    text-align: center;
+    user-select: none;
+}
+
+.menu-element{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding:10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.2s;
+    font-size: 25px;
+    margin-bottom: 10px;
+    
+}
+
+.menu-element:hover{
+    cursor:pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.2s;
+}
+
+.highlight{
+    background-color: green !important;
+}
+
+.highlight:hover{
+    background-color: rgba(0, 128, 0, 0.5) !important;
+}
+
+input{
+    font-family: SpaceGrotesk;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    color:white;
+    outline:none;
+    text-align: center;
+}
+
+.menu-button{
+    font-family: SpaceGrotesk;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border:none;
+    outline:none;
+    font-size:20px;
+    margin-top:20px;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.menu-button:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.disclaimer{
+    color:gray;
+    font-size:10px;
+}
+
+.menu-back{
+    position: absolute;
+    top:5px;
+    left:5px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(40, 40, 40);
+    border-radius: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 4px;
+}

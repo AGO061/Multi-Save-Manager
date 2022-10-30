@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Save Manager</title>
+    <link href="global.css" rel="stylesheet">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+<!--
+have to call compute() from here for example when user clicks any button or something like that.
+-->
+<h1>Create a Save</h1>
+<input type="text" placeholder="Game Name..." id="gamename">
+<input type="text" style="margin-top:20px;margin-bottom: 5px;"placeholder="Game Save Folder..." id="gamepath">
+<button style="margin-top:0;margin-bottom: 20px;" class="menu-button" onclick="BrowseGamePath()">Browse</button>
+<br>
+<button class="menu-button" style="margin:0;" onclick="CreateGameData(document.getElementById('gamename').value,document.getElementById('gamepath').value)">Create</button>
+<p class="disclaimer">*The created save will be automatically enabled once created</p>
+</body>
+</html>
