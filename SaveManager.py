@@ -103,7 +103,7 @@ def CreateGameData(GameID,SavePath):
 
 @eel.expose
 def AskDirectoryInput():
-    return filedialog.askdirectory()
+    return filedialog.askdirectory().replace("\\","/")
     
 
 # 300 is width of window and 400 is the height
